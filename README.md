@@ -1,4 +1,7 @@
-# Anand Jha Portfoli
+# Anand Jha Portfolio
+
+![Alt Text](https://github.com/anandj25/Portfolio/blob/main/1711243457585.jpeg.jpg?raw=true)
+
 
 ## About Me
 Master of Science in Data Science student at the University of Michigan Dearborn, with a GPA of 3.90. I have a strong foundation in data analytics, machine learning, cloud platforms, and ETL processes. I am passionate about leveraging data to solve complex problems and improve decision-making processes.
