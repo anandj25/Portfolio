@@ -8,10 +8,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
       background-color: #f4f4f4;
+      color: #333;
     }
     .hero {
       background-color: #4CAF50;
@@ -25,23 +24,38 @@
     .content h3 {
       color: #4CAF50;
     }
+    .is-rounded {
+      border-radius: 50%;
+    }
+    .progress {
+      height: 12px;
+    }
   </style>
 </head>
 <body>
 
 <!-- Header Section -->
-<section class="hero is-info">
+<section class="hero">
   <div class="hero-body">
-    <h1 class="title">
-      Anand Jha
-    </h1>
-    <p class="subtitle">
-      Master of Science in Data Science | University of Michigan, Dearborn
-    </p>
-    <p>
-      <a href="mailto:anandjha@umich.edu" class="button is-link"><i class="fas fa-envelope"></i> anandjha@umich.edu</a>
-      <a href="https://www.linkedin.com/in/anandjha25" class="button is-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    </p>
+    <div class="columns is-vcentered">
+      <div class="column is-one-third">
+        <figure class="image is-128x128">
+          <img src="https://github.com/anandj25/Portfolio/blob/main/1711243457585.jpeg.jpg?raw=true" alt="Anand Jha Photo" class="is-rounded">
+        </figure>
+      </div>
+      <div class="column">
+        <h1 class="title">
+          Anand Jha
+        </h1>
+        <p class="subtitle">
+          Master of Science in Data Science | University of Michigan, Dearborn
+        </p>
+        <p>
+          <a href="mailto:anandjha@umich.edu" class="button is-link"><i class="fas fa-envelope"></i> anandjha@umich.edu</a>
+          <a href="https://www.linkedin.com/in/anandjha25" class="button is-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -59,14 +73,12 @@
 <section class="section">
   <div class="container content">
     <h2 class="title is-3">Technical Skills</h2>
-    <ul>
-      <li><strong>Core Competencies:</strong> Data Analysis, Data Modeling, Machine Learning, Data Mining, Statistical Analysis, ETL.</li>
-      <li><strong>Programming Languages:</strong> SQL (MS SQL, MySQL), Python (NumPy, Pandas, PySpark, Scikit-learn, TensorFlow, Keras).</li>
-      <li><strong>Data Visualization:</strong> Power BI, Tableau, Alteryx.</li>
-      <li><strong>Cloud Platforms:</strong> AWS (S3, AKS, Glue), Google Cloud Platform.</li>
-      <li><strong>Development & Operations:</strong> Agile Methodologies, SDLC, IT Operations, Linux.</li>
-      <li><strong>Software and Tools:</strong> SSIS, Google AI Studio, Advanced Excel, ServiceNow, Jira.</li>
-    </ul>
+    <p><strong>Data Analysis:</strong></p>
+    <progress class="progress is-success" value="90" max="100">90%</progress>
+    <p><strong>Machine Learning:</strong></p>
+    <progress class="progress is-warning" value="80" max="100">80%</progress>
+    <p><strong>Data Visualization (Power BI, Tableau):</strong></p>
+    <progress class="progress is-info" value="85" max="100">85%</progress>
   </div>
 </section>
 
@@ -96,19 +108,19 @@
   <div class="container content">
     <h2 class="title is-3">Projects</h2>
 
-    <h3>Predictive Model for Heart Stroke Identification</h3>
+    <h3><i class="fas fa-heartbeat"></i> Predictive Model for Heart Stroke Identification</h3>
     <p>Developed a machine learning model with a 95.2% accuracy for early diagnosis of heart stroke.</p>
 
-    <h3>Power BI Dashboards for Bike Manufacturer</h3>
+    <h3><i class="fas fa-bicycle"></i> Power BI Dashboards for Bike Manufacturer</h3>
     <p>Created dashboards that optimized sales tracking and inventory management.</p>
 
-    <h3>Product Recommendation System</h3>
+    <h3><i class="fas fa-laptop"></i> Product Recommendation System</h3>
     <p>Processed 8 million Amazon data rows with Spark, achieving an RMSE of 0.13.</p>
 
-    <h3>Customer Churn Prediction</h3>
+    <h3><i class="fas fa-chart-line"></i> Customer Churn Prediction</h3>
     <p>Achieved 87% accuracy using Python and Tableau for telecom dataset analysis.</p>
 
-    <h3>Chatbot for University of Michigan</h3>
+    <h3><i class="fas fa-comments"></i> Chatbot for University of Michigan</h3>
     <p>Increased user interaction by 15% with a chatbot leveraging the Gemini API and Python.</p>
   </div>
 </section>
