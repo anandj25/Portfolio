@@ -24,12 +24,42 @@
     }
     .hero {
       background-color: #FFCB05;
-      color: #00274C;
+      color: white;
       padding: 50px 20px;
-      text-align: center;
     }
-    .section {
-      padding: 30px;
+    .hero-body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .profile-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .profile-details {
+      margin-left: 20px;
+    }
+    .profile-photo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .profile-photo img {
+      border-radius: 50%;
+      border: 5px solid #00274C;
+    }
+    .images-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .images-right img {
+      margin-bottom: 20px;
+    }
+    .section h2 {
+      color: #00274C;
     }
     .progress {
       height: 12px;
@@ -67,12 +97,53 @@
 <!-- Header Section -->
 <section class="hero">
   <div class="hero-body">
-    <h1 class="title">
-      Anand Jha
-    </h1>
-    <p class="subtitle">
-      Master of Science in Data Science<br>University of Michigan, Dearborn
+    <!-- Left Side (Name and Details) -->
+    <div class="profile-container">
+      <div class="profile-photo">
+        <img src="https://github.com/anandj25/Portfolio/blob/main/1711243457585.jpeg.jpg?raw=true" alt="Anand Jha Photo" width="150" height="150">
+      </div>
+      <div class="profile-details">
+        <h1 class="title" style="color: #00274C;">
+          Anand Jha
+        </h1>
+        <p class="subtitle" style="color: #00274C;">
+          Master of Science in Data Science<br>University of Michigan, Dearborn
+        </p>
+        <p>
+          <a href="mailto:anandjha@umich.edu" class="button is-link"><i class="fas fa-envelope"></i> anandjha@umich.edu</a>
+          <a href="https://www.linkedin.com/in/anandjha25" class="button is-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </p>
+      </div>
+    </div>
+    
+    <!-- Right Side (Logos) -->
+    <div class="images-right">
+      <img src="https://github.com/anandj25/Portfolio/blob/main/U-M_Logo-Hex.png?raw=true" alt="University of Michigan Logo" width="150" height="80">
+      <img src="https://github.com/anandj25/Portfolio/blob/main/Acc.png?raw=true" alt="Accenture Logo" width="150" height="80">
+    </div>
+  </div>
+</section>
+
+<!-- About Me Section -->
+<section class="section">
+  <div class="container content">
+    <h2 class="title is-3">About Me</h2>
+    <p>
+      I am a highly motivated Master of Science in Data Science student at the University of Michigan Dearborn, with a GPA of 3.90. I specialize in data analytics, machine learning, cloud platforms, and ETL processes, with a passion for leveraging data to solve complex problems.
     </p>
+  </div>
+</section>
+
+<!-- Technical Skills Section -->
+<section class="section">
+  <div class="container content">
+    <h2 class="title is-3">Technical Skills</h2>
+    <p><strong>Data Analysis:</strong></p>
+    <progress class="progress is-success" value="90" max="100">90%</progress>
+    <p><strong>Machine Learning:</strong></p>
+    <progress class="progress is-warning" value="80" max="100">80%</progress>
+    <p><strong>Data Visualization (Power BI, Tableau):</strong></p>
+    <progress class="progress is-info" value="85" max="100">85%</progress>
   </div>
 </section>
 
@@ -80,7 +151,6 @@
 <section id="resume" class="section">
   <div class="container content">
     <h2 class="title is-3">Resume</h2>
-
     <p><a href="https://github.com/anandj25/Portfolio/blob/main/Anand_Jha_Resume.docx" target="_blank"><strong>Resume</strong></a></p>
 
     <h3 class="title is-4">Skills</h3>
@@ -115,27 +185,13 @@
   <div class="container content">
     <h2 class="title is-3">Projects</h2>
 
-    <h3>Predictive Model for Heart Stroke Identification</h3>
-    <p>Developed a machine learning model using Python with a 95.2% accuracy for early diagnosis of heart stroke and pinpointing critical risk factors.</p>
+    <h3><i class="fas fa-heartbeat"></i> Predictive Model for Heart Stroke Identification</h3>
+    <p>Developed a machine learning model with a 95.2% accuracy for early diagnosis of heart stroke.</p>
 
-    <h3>Power BI Dashboards for Bike Manufacturer</h3>
-    <p>Designed Power BI dashboards that optimized sales tracking and inventory management, leveraging Power Query and DAX for enhanced data analysis.</p>
+    <h3><i class="fas fa-bicycle"></i> Power BI Dashboards for Bike Manufacturer</h3>
+    <p>Created dashboards that optimized sales tracking and inventory management.</p>
 
-    <h3>Product Recommendation System</h3>
-    <p>Engineered a product recommendation system processing 8 million Amazon data rows with Spark, achieving an RMSE of 0.13.</p>
+    <h3><i class="fas fa-laptop"></i> Product Recommendation System</h3>
+    <p>Processed 8 million Amazon data rows with Spark, achieving an RMSE of 0.13.</p>
 
-    <h3>Customer Churn Prediction</h3>
-    <p>Analyzed a telecom dataset using Python and Tableau, achieving 87% accuracy in predicting customer churn.</p>
-
-    <h3>Chatbot for University of Michigan</h3>
-    <p>Leveraged the Gemini API and Python to build a chatbot, incorporating Retrieval Augmented Generation (RAG) and fine-tuning techniques, increasing user interaction by 15%.</p>
-  </div>
-</section>
-
-<!-- Footer Section -->
-<section class="footer">
-  <p>&copy; 2024 Anand Jha | All Rights Reserved</p>
-</section>
-
-</body>
-</html>
+    <h3
