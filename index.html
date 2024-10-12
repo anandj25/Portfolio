@@ -27,7 +27,7 @@
       color: #FFFFFF;
     }
     .hero {
-      background-color: #f4f4f4; /* Neutral background for better balance */
+      background-color: #f4f4f4;
       color: #00274C;
       padding: 50px 20px;
     }
@@ -73,19 +73,20 @@
     h3 {
       font-size: 1.5rem;
     }
+
     .progress {
       height: 12px;
     }
     .button {
-      background-color: #4C4C4C; /* Darker grey background */
+      background-color: #4C4C4C;
       color: white;
       margin-right: 10px;
     }
     .button i {
-      margin-right: 8px; /* Space between icon and text */
+      margin-right: 8px;
     }
     .button:hover {
-      background-color: #333333; /* Even darker on hover */
+      background-color: #333333;
       transition: background-color 0.3s ease;
     }
 
@@ -105,6 +106,9 @@
       margin-bottom: 20px;
       border-radius: 8px;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .tile img {
@@ -119,7 +123,9 @@
     }
 
     .tile p {
+      text-align: center;
       margin-top: 10px;
+      line-height: 1.4;
     }
 
     .footer {
@@ -141,7 +147,7 @@
       }
 
       .images-right {
-        display: none; /* Hide logos on smaller screens */
+        display: none;
       }
 
       .tile {
@@ -182,7 +188,6 @@
 <!-- Header Section -->
 <section class="hero">
   <div class="hero-body">
-    <!-- Left Side (Name and Details) -->
     <div class="profile-container">
       <div class="profile-photo">
         <img src="https://github.com/anandj25/Portfolio/blob/main/1711243457585.jpeg.jpg?raw=true" alt="Anand Jha Photo" width="150" height="150">
@@ -202,7 +207,6 @@
       </div>
     </div>
     
-    <!-- Right Side (Logos) -->
     <div class="images-right">
       <img src="https://github.com/anandj25/Portfolio/blob/main/U-M_Logo-Hex.png?raw=true" alt="University of Michigan Logo" width="150" height="80">
       <img src="https://github.com/anandj25/Portfolio/blob/main/Acc.png?raw=true" alt="Accenture Logo" width="150" height="80">
@@ -210,12 +214,11 @@
   </div>
 </section>
 
-<!-- Work Experience Section (Fixed Layout) -->
+<!-- Work Experience Section -->
 <section id="work-experience" class="section">
   <div class="container content">
     <h2 class="title is-3">Work Experience</h2>
     
-    <!-- Tile container -->
     <div class="tile-container">
       <!-- Accenture Work Experience -->
       <div class="tile">
@@ -236,12 +239,11 @@
   </div>
 </section>
 
-<!-- Projects Section (Fixed Layout) -->
+<!-- Projects Section -->
 <section id="projects" class="section">
   <div class="container content">
     <h2 class="title is-3">Projects</h2>
     
-    <!-- Tile container for projects -->
     <div class="tile-container">
       <div class="tile">
         <img src="https://github.com/anandj25/Portfolio/blob/main/project-1-logo.png?raw=true" alt="Project Logo">
