@@ -14,7 +14,6 @@
     }
     .navbar {
       background-color: #00274C;
-      font-size: 1.2rem;
     }
     .navbar-item, .navbar-brand a {
       color: #FFCB05;
@@ -25,30 +24,18 @@
     }
     .hero {
       background-color: #FFCB05;
+      color: #00274C;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .section {
+      padding: 30px;
+    }
+    .footer {
+      padding: 20px;
+      background-color: #00274C;
       color: white;
-      padding: 30px 20px;
-    }
-    .hero-body {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .profile-container {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-    .profile-details {
-      margin-left: 20px;
-    }
-    .profile-photo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .profile-photo img {
-      border-radius: 50%;
-      border: 5px solid #00274C;
+      text-align: center;
     }
     .contact-info {
       margin-top: 20px;
@@ -62,40 +49,6 @@
     }
     .contact-info i {
       margin-right: 8px;
-    }
-    .images-right {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    .images-right img {
-      margin-bottom: 20px;
-    }
-    .section h2 {
-      color: #00274C;
-    }
-    .progress {
-      height: 12px;
-    }
-    .footer {
-      padding: 20px;
-      background-color: #00274C;
-      color: white;
-      text-align: center;
-    }
-    .project-box {
-      display: inline-block;
-      width: 30%;
-      padding: 20px;
-      margin: 10px;
-      background-color: #f9f9f9;
-      border-radius: 8px;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .project-box:hover {
-      background-color: #FFCB05;
     }
   </style>
 </head>
@@ -111,9 +64,6 @@
 
   <div class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item" href="#about">
-        About Me
-      </a>
       <a class="navbar-item" href="#resume">
         Resume
       </a>
@@ -127,41 +77,18 @@
 <!-- Header Section -->
 <section class="hero">
   <div class="hero-body">
-    <!-- Left Side (Name and Details) -->
-    <div class="profile-container">
-      <div class="profile-photo">
-        <img src="https://github.com/anandj25/Portfolio/blob/main/1711243457585.jpeg.jpg?raw=true" alt="Anand Jha Photo" width="150" height="150">
-      </div>
-      <div class="profile-details">
-        <h1 class="title" style="color: #00274C;">
-          Anand Jha
-        </h1>
-        <div class="contact-info">
-          <p><i class="fas fa-map-marker-alt"></i> Dearborn, MI</p>
-          <a href="https://www.linkedin.com/in/anandj25/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-          <a href="https://github.com/anandj25" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Right Side (Logos) -->
-    <div class="images-right">
-      <img src="https://github.com/anandj25/Portfolio/blob/main/U-M_Logo-Hex.png?raw=true" alt="University of Michigan Logo" width="150" height="80">
-      <img src="https://github.com/anandj25/Portfolio/blob/main/Acc.png?raw=true" alt="Accenture Logo" width="150" height="80">
-    </div>
-  </div>
-</section>
-
-<!-- About Me Section -->
-<section id="about" class="section">
-  <div class="container content">
-    <h2 class="title is-3">About Me</h2>
-    <p>
-      I am a data science professional currently pursuing a Master of Science in Data Science at the University of Michigan-Dearborn. With 4 years of experience at Accenture, I have led analytical projects using database management, machine learning, and data visualization tools such as Power BI and Python.
+    <h1 class="title">
+      Anand Jha
+    </h1>
+    <p class="subtitle">
+      Master of Science in Data Science<br>University of Michigan, Dearborn
     </p>
-    <p>
-      I enjoy leveraging data to find meaningful insights and solve complex problems. My recent work includes designing machine learning models and automation scripts, as well as mentoring colleagues.
-    </p>
+
+    <div class="contact-info">
+      <p><i class="fas fa-map-marker-alt"></i> Dearborn, MI</p>
+      <a href="https://www.linkedin.com/in/anandj25/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/anandj25" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
   </div>
 </section>
 
@@ -169,20 +96,32 @@
 <section id="resume" class="section">
   <div class="container content">
     <h2 class="title is-3">Resume</h2>
-    <p><a href="https://github.com/anandj25/Portfolio/blob/main/Anand_Jha_Resume.docx" target="_blank"><strong>Download Resume</strong></a></p>
+
+    <p><a href="https://github.com/anandj25/Portfolio/blob/main/Anand_Jha_Resume.docx" target="_blank"><strong>Resume</strong></a></p>
 
     <h3 class="title is-4">Skills</h3>
     <ul>
       <li><strong>Core Competencies:</strong> Data Analysis, Data Modelling, Machine Learning, Data Mining, Statistical Analysis, ETL.</li>
       <li><strong>Programming Languages:</strong> SQL (MS SQL, MySQL), Python (NumPy, Pandas, PySpark, Scikit-Learn, TensorFlow, Keras).</li>
-      <li><strong>Data Visualization:</strong> Power BI, Tableau, Alteryx.</li>
-      <li><strong>Cloud Platforms:</strong> AWS, Google Cloud.</li>
+      <li><strong>Data Visualization:</strong> Power BI (including Power Query, DAX), Tableau, Alteryx.</li>
+      <li><strong>Cloud Platforms:</strong> AWS (S3, AKS, Glue), Google Cloud Platform.</li>
+      <li><strong>Development & Operations:</strong> Agile Methodologies, SDLC, IT Operations, Linux.</li>
+      <li><strong>Software and Tools:</strong> SSIS, Google AI Studio, Microsoft Office Suite (Advanced Excel), ServiceNow, Jira.</li>
     </ul>
 
-    <h3 class="title is-4">Education</h3>
+    <h3 class="title is-4">Professional Experience</h3>
+    <p><strong>Accenture – Infra Business Analyst (Bangalore, India) | Aug 2019 – July 2023</strong></p>
     <ul>
-      <li><strong>Master of Science - Data Science, University of Michigan-Dearborn</strong> (August 2023 - May 2025)</li>
-      <li><strong>Bachelor of Engineering - Computer Science, Rajiv Gandhi Prodyogiki Vishwavidyalaya</strong> (2015 - 2019)</li>
+      <li>Achieved 100% SLA compliance and improved quality across IT Ops teams for various clients.</li>
+      <li>Designed and maintained SQL-based ETL packages using SSIS, developing custom scripts and jobs to automate data extraction and transformation.</li>
+      <li>Developed Power BI dashboards for IT Ops teams, accelerating ticket resolution by 20% through real-time insights.</li>
+      <li>Optimized processes and implemented Python automation scripts, leading to $40k annual savings and reduced filesystem alerts by 95%.</li>
+    </ul>
+
+    <p><strong>PeopleClick Tech Solutions – Data Analytics Intern | Mar 2019 – Aug 2019</strong></p>
+    <ul>
+      <li>Engineered health-tracking dashboards, enhancing system reliability and performance by 15%.</li>
+      <li>Applied SQL and Python to perform data analysis, fostering data-driven decision-making.</li>
     </ul>
   </div>
 </section>
@@ -192,20 +131,20 @@
   <div class="container content">
     <h2 class="title is-3">Projects</h2>
 
-    <div class="project-box">
-      <h3>Predictive Model for Heart Stroke</h3>
-      <p>Developed a machine learning model with a 95.2% accuracy for early diagnosis of heart stroke.</p>
-    </div>
+    <h3>Predictive Model for Heart Stroke Identification</h3>
+    <p>Developed a machine learning model using Python with a 95.2% accuracy for early diagnosis of heart stroke and pinpointing critical risk factors.</p>
 
-    <div class="project-box">
-      <h3>Power BI Dashboards</h3>
-      <p>Created dashboards that optimized sales tracking and inventory management.</p>
-    </div>
+    <h3>Power BI Dashboards for Bike Manufacturer</h3>
+    <p>Designed Power BI dashboards that optimized sales tracking and inventory management, leveraging Power Query and DAX for enhanced data analysis.</p>
 
-    <div class="project-box">
-      <h3>Product Recommendation System</h3>
-      <p>Processed 8 million Amazon data rows with Spark, achieving an RMSE of 0.13.</p>
-    </div>
+    <h3>Product Recommendation System</h3>
+    <p>Engineered a product recommendation system processing 8 million Amazon data rows with Spark, achieving an RMSE of 0.13.</p>
+
+    <h3>Customer Churn Prediction</h3>
+    <p>Analyzed a telecom dataset using Python and Tableau, achieving 87% accuracy in predicting customer churn.</p>
+
+    <h3>Chatbot for University of Michigan</h3>
+    <p>Leveraged the Gemini API and Python to build a chatbot, incorporating Retrieval Augmented Generation (RAG) and fine-tuning techniques, increasing user interaction by 15%.</p>
   </div>
 </section>
 
