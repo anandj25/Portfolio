@@ -15,114 +15,170 @@
       color: #333;
       line-height: 1.6;
     }
-
+    .navbar {
+      background-color: #00274C;
+    }
+    .navbar-item, .navbar-brand a {
+      color: #FFCB05;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    .navbar-item:hover, .navbar-brand a:hover {
+      color: #FFFFFF;
+    }
+    .hero {
+      background-color: #f4f4f4;
+      color: #00274C;
+      padding: 50px 20px;
+    }
+    .hero-body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .profile-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .profile-details {
+      margin-left: 20px;
+    }
+    .profile-photo img {
+      border-radius: 50%;
+      border: 5px solid #00274C;
+    }
+    .section {
+      padding: 50px 20px;
+    }
+    h2 {
+      font-size: 2.5rem;
+      color: #00274C;
+      margin-bottom: 0.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
     .tile-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       margin-top: 20px;
     }
-
     .tile {
       background-color: white;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       padding: 20px;
+      width: 48%;
+      margin-bottom: 20px;
       border-radius: 8px;
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
-    .tile img {
-      width: 60px;
-      margin-bottom: 15px;
-    }
-
-    .tile h3 {
-      font-size: 1.5rem;
-      color: #00274C;
-      margin-bottom: 10px;
-    }
-
-    .tile p {
+    .footer {
+      padding: 20px;
+      background-color: #00274C;
+      color: white;
       text-align: center;
-      margin-top: 10px;
-      line-height: 1.4;
     }
-
-    .tile:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .tile.magnify {
-      transform: scale(1.2);
-      z-index: 10;
-      position: relative;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    }
-
-    @media only screen and (max-width: 768px) {
-      .tile-container {
-        grid-template-columns: 1fr;
-      }
-
-      .tile {
-        width: 100%;
-      }
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
 <body>
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <div class="container content">
-      <h2 class="title is-3">Projects</h2>
-      
-      <div class="tile-container">
-        <div class="tile" onclick="magnifyTile(this)">
-          <img src="https://github.com/anandj25/Portfolio/blob/main/project-1-logo.png?raw=true" alt="Project Logo">
-          <h3>Predictive Model for Heart Stroke Identification</h3>
-          <p>Developed a machine learning model with a 95.2% accuracy for early diagnosis of heart stroke.</p>
-        </div>
-        
-        <div class="tile" onclick="magnifyTile(this)">
-          <img src="https://github.com/anandj25/Portfolio/blob/main/project-2-logo.png?raw=true" alt="Project Logo">
-          <h3>Power BI Dashboards for Bike Manufacturer</h3>
-          <p>Created dashboards that optimized sales tracking and inventory management.</p>
-        </div>
 
-        <div class="tile" onclick="magnifyTile(this)">
-          <img src="https://github.com/anandj25/Portfolio/blob/main/project-3-logo.png?raw=true" alt="Project Logo">
-          <h3>Product Recommendation System</h3>
-          <p>Processed 8 million Amazon data rows with Spark, achieving an RMSE of 0.13.</p>
-        </div>
+<!-- Navbar Section -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="#">Anand Jha</a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="#resume">Resume</a>
+      <a class="navbar-item" href="#work-experience">Work Experience</a>
+      <a class="navbar-item" href="#education">Education</a>
+      <a class="navbar-item" href="#projects">Projects</a>
+      <a class="navbar-item" href="#certifications">Certifications</a>
+      <a class="navbar-item" href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
 
-        <div class="tile" onclick="magnifyTile(this)">
-          <img src="https://github.com/anandj25/Portfolio/blob/main/project-4-logo.png?raw=true" alt="Project Logo">
-          <h3>Customer Churn Prediction</h3>
-          <p>Achieved 87% accuracy using Python and Tableau for telecom dataset analysis.</p>
-        </div>
+<!-- Header Section -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="profile-container">
+      <div class="profile-photo">
+        <img src="https://github.com/anandj25/Portfolio/blob/main/1711243457585.jpeg.jpg?raw=true" alt="Anand Jha Photo" width="150" height="150">
+      </div>
+      <div class="profile-details">
+        <h1 class="title" style="color: #00274C;">Anand Jha</h1>
+        <p class="subtitle" style="color: #00274C;">Master of Science in Data Science<br>University of Michigan, Dearborn</p>
+        <p>
+          <a href="mailto:anandjha@umich.edu" class="button is-link"><i class="fas fa-envelope"></i>anandjha@umich.edu</a>
+          <a href="https://www.linkedin.com/in/anandjha25" class="button is-link"><i class="fab fa-linkedin"></i>LinkedIn</a>
+          <a href="https://github.com/anandj25" class="button is-link"><i class="fab fa-github"></i>GitHub</a>
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <script>
-    function magnifyTile(tile) {
-      // Toggle magnification
-      const isMagnified = tile.classList.contains('magnify');
-      const tiles = document.querySelectorAll('.tile');
+<!-- Work Experience Section -->
+<section id="work-experience" class="section">
+  <div class="container content">
+    <h2 class="title is-3">Work Experience</h2>
+    <div class="tile-container">
+      <div class="tile">
+        <h3>Accenture</h3>
+        <p>Infra Business Analyst | Aug 2019 – Jul 2023</p>
+        <p>Streamlined IT operations and enhanced efficiency.</p>
+      </div>
+      <div class="tile">
+        <h3>PeopleClick</h3>
+        <p>Data Analytics Intern | Mar 2019 – Aug 2019</p>
+        <p>Developed health-tracking dashboards.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-      // Reset all tiles
-      tiles.forEach(t => t.classList.remove('magnify'));
+<!-- Education Section -->
+<section id="education" class="section">
+  <div class="container content">
+    <h2 class="title is-3">Education</h2>
+    <div class="tile-container">
+      <div class="tile">
+        <h3>University of Michigan</h3>
+        <p>MS in Data Science</p>
+      </div>
+      <div class="tile">
+        <h3>RGPV</h3>
+        <p>BTech in Computer Science</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-      // Apply magnify class if not already magnified
-      if (!isMagnified) {
-        tile.classList.add('magnify');
-      }
-    }
-  </script>
+<!-- Projects Section -->
+<section id="projects" class="section">
+  <div class="container content">
+    <h2 class="title is-3">Projects</h2>
+    <div class="tile-container">
+      <div class="tile">
+        <h3>Heart Stroke Prediction</h3>
+        <p>Achieved 95% accuracy with ML models.</p>
+      </div>
+      <div class="tile">
+        <h3>Bike Manufacturer</h3>
+        <p>Optimized sales tracking with BI tools.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 </body>
 </html>
