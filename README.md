@@ -64,7 +64,7 @@
   <div class="container content">
     <h2 class="title is-3">About Me</h2>
     <p>
-      I am a highly motivated Master of Science in Data Science student at the University of Michigan Dearborn, with a GPA of 3.90. I specialize in data analytics, machine learning, cloud platforms, and ETL processes, with a passion for leveraging data to solve complex problems.
+      I am a driven Data Science professional, currently enriching my expertise with a Master of Science in Data Science from the University of Michigan-Dearborn. With a rich background of 4 years at Accenture, I've led analytical initiatives and executed complex data projects, demonstrating proficiency in Database Management, Data Analytics, Visualization, Machine Learning, IT operations, and automation. My technical toolkit includes Python, Big-Data technologies, Power-BI, Cloud Operations, Middleware, and Scripting. Fueled by a passion for uncovering data-driven solutions, I am actively seeking opportunities within the US, aiming to leverage my extensive experience and ongoing education in the dynamic field of Data Science.
     </p>
   </div>
 </section>
@@ -89,9 +89,9 @@
 
     <h3>Accenture – Infra Business Analyst (Bangalore, India) | Aug 2019 – July 2023</h3>
     <ul>
-      <li>Achieved 100% SLA compliance and improved quality across IT Ops teams for various clients.</li>
-      <li>Designed SQL-based ETL packages with SSIS, automating processes and optimizing ETL by 15%.</li>
-      <li>Developed Power BI dashboards, accelerating ticket resolution by 20% with real-time insights.</li>
+      <li>Designed and maintained SQL-based ETL packages using SSIS, developing custom scripts and jobs to automate data extraction, transformation, and loading, optimizing the ETL process by 15%, ensuring high efficiency and accuracy.</li>
+      <li>Developed and refined Power BI dashboards for IT Ops teams, which accelerated ticket resolution by 20% through real-time insights. </li>
+      <li>Devised data-driven forecasting models that accurately projected incident volumes, optimizing resource allocation.</li>
       <li>Implemented Python automation scripts, leading to $40k annual savings and reducing filesystem alerts by 95%.</li>
     </ul>
 
